@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}PPC - Functions{% endblock %}
+
+{% block content %} 
+    
+<!-- Body content starts here -->
+    <section id="page-breadcrumb">
+		   <div class="container">
+		     <div class="row">
+		       <div class="col-md-12">
+		         <div class="page-breadcrumb-area">
+		           <h2>Functions</h2>
+		           <ol class="breadcrumb">
+		            <li><a href="{% url 'home' %}">Home</a></li>            
+                    <li class="active">Functions</li>
+		          </ol>
+		         </div>
+		       </div>
+		     </div>
+		   </div>
+		 </section>
+         <div class="container set-min-height">
+            <div class="row">
+                <div class="col-md-12 ser-fet">
+                    <h3 class="br2">
+                        Functions</h3>
+                    <div class="text-justify">
+                   According to Pharmacy Act, 1967, Functions of Punjab Pharmacy Council are as under:
+                    <div class="br2"></div>
+                    <ol>
+                    <li>Examination</li>
+                    <li>Registration</li>
+                  </div>
+              </div>
+        </div>
+
+        {% endblock %}

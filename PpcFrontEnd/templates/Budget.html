@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}PPC - Budget{% endblock %}
+
+{% block content %} 
+<!-- Body content starts here -->
+    <section id="page-breadcrumb">
+		   <div class="container">
+		     <div class="row">
+		       <div class="col-md-12">
+		         <div class="page-breadcrumb-area">
+		           <h2>Budget</h2>
+		           <ol class="breadcrumb">
+		            <li><a href="{% url 'home' %}">Home</a></li>            
+                    <li class="active">Budget</li>
+		          </ol>
+		         </div>
+		       </div>
+		     </div>
+		   </div>
+		 </section>
+        <div class="container set-min-height">
+            <div class="row">
+                <div class="col-md-12 ser-fet">
+                    <h3 class="br2">
+                        Budget</h3>
+                    <hr>
+
+                   <div class="table-responsive">
+                      <table class="table table-striped table-bordered table-hover">
+                            <thead>
+                            <tr>
+                              <th>Sr.No</th>
+                              <th>Description</th>
+                              <th>Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Budget 2022-23</td>
+                              <td><a href="directory/budget/ADP-2022-23.pdf">Download</a></td>
+                            </tr>
+                             <tr>
+                              <th scope="row">2</th>
+                              <td>Budget 2021-22</td>
+                              <td><a href="directory/budget/ADP-2021-22.pdf">Download</a></td>
+                            </tr>
+                             <tr>
+                              <th scope="row">3</th>
+                              <td>Budget 2020-21</td>
+                              <td><a href="directory/budget/MPR%20%20JUNE%202021.pdf">Download</a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">4</th>
+                              <td>Budget 2019-20</td>
+                              <td><a href="directory/budget/MPR%20June%202020.pdf">Download</a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">5</th>
+                              <td>Budget 2018-19</td>
+                              <td><a href="directory/budget/MPR%20June%202019.pdf">Download</a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">6</th>
+                              <td>Budget 2017-18</td>
+                              <td><a href="directory/budget/MPR%20JUNE%202018.pdf">Download</a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">7</th>
+                              <td>Budget 2016-17</td>
+                              <td><a href="directory/budget/1-Budget2017-18.pdf">Download</a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">8</th>
+                              <td>Budget 2015-16</td>
+                              <td><a href="directory/budget/2-NonDev%202015-16%20PC21016.pdf">Download</a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">9</th>
+                              <td>Budget 2014-15</td>
+                              <td><a href="directory/budget/3-ADP%202014-15.pdf">Download</a></td>
+                            </tr>
+                             <tr>
+                              <th scope="row">10</th>
+                              <td>Budget 2013-14</td>
+                              <td><a href="directory/budget/4-2013-14.pdf">Download</a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">11</th>
+                              <td>Budget 2012-13</td>
+                              <td><a href="directory/budget/5-2012-13.pdf">Download</a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">12</th>
+                              <td>Budget 2011-12</td>
+                              <td><a href="directory/budget/6-2011-12.pdf">Download</a></td>
+                            </tr>
+                          </tbody>
+                      </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endblock %}

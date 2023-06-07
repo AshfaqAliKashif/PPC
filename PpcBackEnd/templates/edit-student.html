@@ -1,0 +1,214 @@
+{% extends 'BackEndBase.html' %}
+{% load static%}
+{% block title %}Student - Edit{% endblock title %}
+
+{% block content %}
+
+<div class="page-wrapper">
+<div class="content container-fluid">
+
+<div class="page-header">
+<div class="row align-items-center">
+<div class="col-sm-12">
+<div class="page-sub-header">
+<h3 class="page-title">Edit Students</h3>
+<ul class="breadcrumb">
+<li class="breadcrumb-item"><a href="students.html">Student</a></li>
+<li class="breadcrumb-item active">Edit Students</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+<div class="card comman-shadow">
+<div class="card-body">
+<form action="" method="POST" enctype="multipart/form-data" novalidate>
+    {% csrf_token %}
+    {% if form.non_field_errors %}
+    {% for error in form.non_field_errors %}
+    {{error}}
+    {% endfor %}
+    {% endif %}
+<br> <br>    
+<div class="row">
+<div class="col-12">
+<h5 class="form-title student-info">Student Information <span><a href="javascript:;"><i class="feather-more-vertical"></i></a></span></h5>
+</div>
+{% comment %} {% for fm in form %}
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms form-control">
+    {{fm.label_tag}} {{fm}}<br> {{fm.errors|striptags}}
+</div>
+</div>
+{% endfor%} {% endcomment %}
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>First Name <span class="login-danger">*</span></label>
+<input class="form-control" type="text" name="First_Name" placeholder="Enter First Name">
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Last Name <span class="login-danger">*</span></label>
+<input class="form-control" type="text" name="Last_Name" placeholder="Enter Last Name">
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Father Name <span class="login-danger">*</span></label>
+<input class="form-control" type="text" name="Fathers_Name" placeholder="Enter Father Name">
+</div>
+</div>
+{% comment %} <div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Gender <span class="login-danger">*</span></label>
+<select class="form-control select">
+<option>Select Gender</option>
+<option>Female</option>
+<option>Male</option>
+<option>Others</option>
+</select>
+</div>
+</div> {% endcomment %}
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms calendar-icon">
+<label>Date Of Birth <span class="login-danger">*</span></label>
+<input class="form-control datetimepicker" type="text" name="Date_of_Birth" placeholder="YYYY-MM-DD">
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Religion <span class="login-danger">*</span></label>
+<select class="form-control select" name="Religion" >
+<option>Please Select Religion </option>
+<option>Muslim</option>
+<option>Christian</option>
+<option>Hindu</option>
+<option>Others</option>
+</select>
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Qualification <span class="login-danger">*</span></label>
+<input class="form-control" type="text" name="Qualification" placeholder="Enter Last Qualification">
+</div>
+</div>
+{% comment %} <div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Roll </label>
+<input class="form-control" type="text" placeholder="Enter Roll Number">
+</div>
+</div> {% endcomment %}
+{% comment %} <div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Blood Group <span class="login-danger">*</span></label>
+<select class="form-control select">
+<option>Please Select Group </option>
+<option>B+</option>
+<option>A+</option>
+<option>O+</option>
+</select>
+</div>
+</div> {% endcomment %}
+
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>E-Mail <span class="login-danger">*</span></label>
+<input class="form-control" type="text" name="Student_email" placeholder="Enter Email Address">
+</div>
+</div>
+{% comment %} <div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Class <span class="login-danger">*</span></label>
+<select class="form-control select">
+<option>Please Select Class </option>
+<option>12</option>
+<option>11</option>
+<option>10</option>
+</select>
+</div>
+</div> {% endcomment %}
+{% comment %} <div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Section <span class="login-danger">*</span></label>
+<select class="form-control select">
+<option>Please Select Section </option>
+<option>B</option>
+<option>A</option>
+<option>C</option>
+</select>
+</div>
+</div> {% endcomment %}
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Phone </label>
+<input class="form-control" type="text" name="Student_mobile" placeholder="Enter Phone Number">
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Permanent Address</label>
+<input class="form-control" type="text" name="Permanent_Address" placeholder="Enter Permanent Address">
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group students-up-files">
+<label>Upload Matric Document (150px X 150px)</label>
+<div class="uplod">
+<label class="file-upload image-upbtn mb-0">
+Choose File <input type="file" name="Matric_Image">
+</label>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group students-up-files">
+<label>Upload Student CNIC (150px X 150px)</label>
+<div class="uplod">
+<label class="file-upload image-upbtn mb-0">
+Choose File <input type="file" name="Student_CNIC_Image">
+</label>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group students-up-files">
+<label>Upload Student Picture (150px X 150px)</label>
+<div class="uplod">
+<label class="file-upload image-upbtn mb-0">
+Choose File <input type="file" name="Student_Image">
+</label>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group students-up-files">
+<label>Upload Institution Admission Letter (150px X 150px)</label>
+<div class="uplod">
+<label class="file-upload image-upbtn mb-0">
+Choose File <input type="file" name="Institution_Admission_Letter">
+</label>
+</div>
+</div>
+</div>
+<div class="col-12">
+<div class="student-submit">
+<button type="submit" class="btn btn-primary">Submit</button>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+{% endblock content %}

@@ -1,0 +1,1073 @@
+{% load static %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Home | Punjab Pharmacy Council, Lahore</title>
+<meta charset="utf-8" /><meta name="robots" content="all" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="keywords" content="Punjab Pharmacy Council &amp; Punjab Pharmacy Council Template or PPC &amp; Pharmacy Department" /><meta name="description" content="Punjab Pharmacy Council &amp; Punjab Pharmacy Council Template or PPC &amp; Pharmacy Department" /><meta name="author" content="Punjab Pharmacy Council &amp; Punjab Pharmacy Council Template or PPC &amp; Pharmacy Department" />
+    
+    <!--Favicon-->
+    <link rel="shortcut icon" href="{% static 'assets/img/ftdrupal001_favicon.ico'%}" type="image/x-icon" />
+    <!--Favicon-->
+    <!--fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Monda:400,700" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700" rel="stylesheet" type="text/css" />
+    <!--fonts-->
+    <!--owlcss-->
+    <link href="{% static 'assets/css/owl.carousel.css'%}" rel="stylesheet" />
+    <!--bootstrap-->
+    <link href="{% static 'assets/css/bootstrap.min.css'%}" rel="stylesheet" type="text/css" />
+    <!--coustom css-->
+    <link href="{% static 'assets/css/style1.css'%}" rel="stylesheet" type="text/css" />
+    <!--default-js-->
+    <script src="{% static 'assets/js/jquery-2.1.4.min.js'%}"></script>
+    <!--bootstrap-js-->
+    <script src="{% static 'assets/js/bootstrap.min.js'%}"></script>
+    <!--script-->
+    <script type="text/javascript" src="{% static 'assets/js/move-top.js'%}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/easing.js'%}"></script>
+    <!--script File for Data Tables-->
+    <script type="text/javascript" src="{% static 'assets/js/jquery.dataTables.min.js'%}"></script>
+    <!--CSS File for Data Tables-->
+    <link href="{% static 'assets/css/jquery.dataTables.css'%}" rel="stylesheet" type="text/css" /><title>
+
+</title></head>
+<body>
+    <div class="header" id="home">
+        <div class="header-top">
+            <nav class="navbar chn-gd primary-menu-navbar">
+					<!-- Brand and toggle get grouped for better mobile display -->
+
+					<div class="row">
+					<div class="col-md-4">
+
+					<ul class="nav navbar-nav navbar-right primary-right-menu">
+					<li><a href="javascript:void(0);"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>  042-99260298</a></li>
+					<li><a href="{% static 'mailto:punjabpharmacycouncil@hotmail.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  <small>punjabpharmacycouncil@hotmail.com</small></a></li>
+					</ul>
+
+
+					</div>
+					<div class="col-md-8">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+						
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+					<ul class="nav navbar-nav navbar-right primary-right-menu">
+                         <!---->
+                    
+                        <li>
+						<a href="{% url 'home'%}">
+						Home
+						</a>
+						</li>
+                        <!---->
+                        <li>
+                        <a href="{% url 'about' %}">
+                        About Us
+                        </a>
+                        </li>
+                        <!---->
+						<li>
+						<a href="{% url 'institutionsList'%}">
+						Institutions
+						</a>
+						</li>
+						<!---->
+						<li>
+						<a href="{% url 'download'%}">
+						Downloads
+						</a>
+						</li>
+						<!---->
+						<li>
+						<a href="{% url 'Tenders'%}">
+						Tenders
+						</a>
+						</li>
+						<!---->
+                        <li>	
+						<a href="{% url 'contact'%}">
+						Contact Us
+						</a>
+						</li>
+                        <!---->
+                        <li>	
+						<a href="{% url 'do_login'%}">
+						Login
+						</a>
+						</li>
+                        <!---->
+					</ul>
+					</div><!-- /.navbar-collapse -->
+					<div class="clearfix"></div>
+					</div>
+					</div>
+
+		
+				</nav>
+        </div>
+        <!-- </div>
+ -->
+        <div class="header_nav" id="home">
+            <nav class="navbar navbar-default chn-gd">
+					<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand logo-st" href="/"><img src="{% static 'assets/img/home.png'%}" alt="Logo" class="img-responsive home-img"></a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+                        <li>	
+						<a href="{% url 'Examination'%}">
+						<span class="glyphicon glyphicon-list-alt icn_pos" aria-hidden="true"></span><br>
+						Examination
+						</a>
+						</li>
+                        <li>
+						<a href="{% url 'Budget'%}">
+						<span class="glyphicon glyphicon-plus icn_pos hm" aria-hidden="true"></span><br>
+						Budget
+						</a>
+						</li>
+						<!---->
+						<li>
+						<a href="{% url 'Services'%}">
+						<span class="glyphicon glyphicon-cog icn_pos" aria-hidden="true"></span><br>
+						Services
+						</a>
+						</li>
+						<!---->
+						<li>
+						<a href="{% url 'Functions'%}">
+						<span class="glyphicon glyphicon-briefcase icn_pos" aria-hidden="true"></span><br>
+						Functions
+						</a>
+						</li>
+						<!---->
+						<li>
+						<a href="{% url 'Notifications'%}">
+						<span class="glyphicon glyphicon-bell icn_pos hm2" aria-hidden="true"></span><br>
+						Notifications
+						</a>
+						</li>
+						<!---->
+						<li>	
+						<a href="{% url 'Faqs'%}">
+						<span class="glyphicon glyphicon-list icn_pos" aria-hidden="true"></span><br>
+						FAQs
+						</a>
+						</li>
+						
+
+						<!--script-->
+						<script type="text/javascript">
+						    jQuery(document).ready(function ($) {
+						        $(".scroll").click(function (event) {
+						            event.preventDefault();
+						            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 900);
+						        });
+						    });
+						</script>
+						<!--script-->
+					</ul>
+					</div><!-- /.navbar-collapse -->
+					<div class="clearfix"></div>
+					</div><!-- /.container-fluid -->
+				</nav>
+        </div>
+    </div>
+    <div class="header_banner">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+                <li data-target="#myCarousel" data-slide-to="7"></li>
+                <li data-target="#myCarousel" data-slide-to="8"></li>
+                <li data-target="#myCarousel" data-slide-to="9"></li>
+                <li data-target="#myCarousel" data-slide-to="10"></li>
+                <li data-target="#myCarousel" data-slide-to="11"></li>
+                <li data-target="#myCarousel" data-slide-to="12"></li>
+
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+            
+               
+
+                <div class="item active   image-wid">
+                    <img src="{% static 'assets/img/slider/1.jpg'%}" alt="..." class="img-responsive">
+                </div>
+                <div class="item  image-wid">
+                    <img src="{% static 'assets/img/slider/2.jpg'%}" alt="..." class="img-responsive">
+                </div>
+                <div class="item  image-wid">
+                    <img src="{% static 'assets/img/slider/3.jpg'%}" alt="..." class="img-responsive">
+                </div>
+                <div class="item  image-wid">
+                    <img src="{% static 'assets/img/slider/4.jpg'%}" alt="..." class="img-responsive">
+                </div>
+                <div class="item  image-wid">
+                    <img src="{% static 'assets/img/slider/5.jpg'%}" alt="..." class="img-responsive">
+                </div>
+                <div class="item  image-wid">
+                    <img src="{% static 'assets/img/slider/6.jpg'%}" alt="..." class="img-responsive">
+                </div>
+                <div class="item  image-wid">
+                    <img src="{% static 'assets/img/slider/7.jpg'%}" alt="..." class="img-responsive">
+                </div>
+                <div class="item  image-wid">
+                    <img src="{% static 'assets/img/slider/8.jpg'%}" alt="..." class="img-responsive">
+                </div>
+            
+               
+                
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="{% static '#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">
+                    Previous</span> </a><a class="right carousel-control" href="{% static '#myCarousel" role="button"
+                        data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true">
+                        </span><span class="sr-only">Next</span> </a>
+        </div>
+    </div>
+    <div class="style-label">
+        <div class="container">
+            <ul class="box-shadow effect2">
+                <li class="col-sm-4 col-md-4"><a href="{% url 'PharmD'%}"><span class="glyphicon glyphicon-education flt"
+                    aria-hidden="true"></span></a>
+                    <div class="label-text">
+                        <a href="{% url 'PharmD'%}">
+                            <h3>
+                                Universities (Pharm-D)</h3>
+                        </a>
+                        <p>
+                            The Quality of a university is measured more by the kind of student it turns out
+                            than the kind it takes in.</p>
+                    </div>
+                </li>
+                <li class="col-sm-4 col-md-4"><a href="{% url 'technician'%}"><span class="glyphicon glyphicon-home flt"
+                    aria-hidden="true"></span></a>
+                    <div class="label-text">
+                        <a href="{% url 'technician'%}">
+                            <h3>
+                                Colleges (Pharmacy Technician)</h3>
+                        </a>
+                        <p>
+                            The Value of a college education is not the learning of many facts but the training
+                            of the mind to think.</p>
+                    </div>
+                </li>
+                <li class="col-sm-4 col-md-4"><a href="{% url 'PharmacyAssistant'%}"><span class="glyphicon glyphicon-plus-sign flt"
+                    aria-hidden="true"></span></a>
+                    <div class="label-text">
+                        <a href="{% url 'PharmacyAssistant'%}">
+                            <h3>
+                                Pharmacy Assistant</h3>
+                        </a>
+                        <p>
+                            The function of education is to teach one to think intensively and to think critically.
+                            Intelligence plus character that is the goal of true education.</p>
+                    </div>
+                </li>
+                <div class="clearfix">
+                </div>
+            </ul>
+            <ul class="box-shadow effect2">
+                <li class="col-sm-4 col-md-4"><a href="{% url 'GoodStandingCertificate'%}"><span class="glyphicon glyphicon-leaf flt"
+                    aria-hidden="true"></span></a>
+                    <div class="label-text">
+                        <a href="{% url 'GoodStandingCertificate'%}">
+                            <h3>
+                                Good Standing Certifiacate</h3>
+                        </a>
+                        <p>
+                            There is no elevator to success. You have to take the stairs.</p>
+                    </div>
+                </li>
+                <li class="col-sm-4 col-md-4"><a href="{% static 'AttachDepartments.html'%}"><span class="glyphicon glyphicon-eye-open flt"
+                    aria-hidden="true"></span></a>
+                    <div class="label-text">
+                        <a href="{% static 'AttachDepartments.html'%}">
+                            <h3>
+                                Attached Departments</h3>
+                        </a>
+                        <p>
+                            I will respect your opinion doesn't disrespect anyone else's existence.</p>
+                    </div>
+                </li>
+                <li class="col-sm-4 col-md-4"><a href="{% static 'OtherHealthFacilities.html'%}"><span class="glyphicon glyphicon-pencil flt"
+                    aria-hidden="true"></span></a>
+                    <div class="label-text">
+                        <a href="{% static 'OtherHealthFacilities.html'%}">
+                            <h3>
+                                Others</h3>
+                        </a>
+                        <p>
+                            If you are not willing to learn, No one can help you. If you are determined to learn,
+                            No one can stop you.</p>
+                    </div>
+                </li>
+                <div class="clearfix">
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="service_features" id="features">
+            <div class="container">
+                <div class="col-md-4 ser-fet">
+                    <h3>
+                        Latest News</h3>
+                    <span class="line"></span>
+                    <div class="services">
+                        <div class="menu-grid">
+                            <marquee class="text-justify" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();"
+                                scrollamount="5" direction="up" height='300'>
+                        
+                        
+
+                          
+
+                      
+                            Fee revised from 01-04-2014
+                       
+                       
+                       
+                           </br>
+                            Pharmacy Assistant Exams scheduled to be held on 05-06-2023
+                       
+                       
+                           </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDatetimeLbl_1" class="text-justify">20/01/2023</span>
+                            </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDescLbl_1" class="text-justify">Applications are invited for the posts of Associate Professors (BS-19), Assistant Professors (BS-18), Senior Registrars (BS-18), Consultants (BS-18) on Adhoc Basis (PHASE-V)</span>
+                            </br><hr>
+                   
+
+                          
+
+                      
+                            <a id="ContentPlaceHolder1_Repeater1_intNewsId_2" href="{% static 'LatestNewse207.html?Id=10083">
+                            <b><span id="ContentPlaceHolder1_Repeater1_txtTitleLbl_2">Vacancy Announcement                                                                                                                                                                                    </span></b>
+
+
+                       </a>
+                       
+                       
+                       
+                           </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDatetimeLbl_2" class="text-justify">20/01/2023</span>
+                            </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDescLbl_2" class="text-justify">Advertisement for the posts of Principals, Chief Executive Officer & Dean of Medical / Health Institutions under SHC&ME Department</span>
+                            </br><hr>
+                   
+
+                          
+
+                      
+                            <a id="ContentPlaceHolder1_Repeater1_intNewsId_3" href="{% static 'LatestNews09b2.html?Id=10082">
+                            <b><span id="ContentPlaceHolder1_Repeater1_txtTitleLbl_3">Vacancy Announcement                                                                                                                                                                                    </span></b>
+
+
+                       </a>
+                       
+                       
+                       
+                           </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDatetimeLbl_3" class="text-justify">20/01/2023</span>
+                            </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDescLbl_3" class="text-justify">Advertisement for Appointment against Sixteen (16) Posts of Medical Superintendents of Health Institutions / Teaching Hospitals, under SHC&ME Department</span>
+                            </br><hr>
+                   
+
+                          
+
+                      
+                            <a id="ContentPlaceHolder1_Repeater1_intNewsId_4" href="{% static 'LatestNews064e.html?Id=10081">
+                            <b><span id="ContentPlaceHolder1_Repeater1_txtTitleLbl_4">Vacancy Announcement                                                                                                                                                                                    </span></b>
+
+
+                       </a>
+                       
+                       
+                       
+                           </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDatetimeLbl_4" class="text-justify">23/09/2022</span>
+                            </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDescLbl_4" class="text-justify">Applications are invited for appointment against vacant posts of Professors (BS-20), Associate Professors (BS-19), Assistant Professors (BS-18), Senior Registrars (BS-18) and Consultants (BS-18) in various specialties, Medical Officers (BS-17), Women Medical Officers (BS-17) & Demonstrators (BS-17), ON ADHOC BASIS, for a period of one year or till the posting of a regular incumbent.</span>
+                            </br><hr>
+                   
+
+                          
+
+                      
+                            <a id="ContentPlaceHolder1_Repeater1_intNewsId_5" href="{% static 'LatestNewscdd6.html?Id=10080">
+                            <b><span id="ContentPlaceHolder1_Repeater1_txtTitleLbl_5">Extension in Joining                                                                                                                                                                                    </span></b>
+
+
+                       </a>
+                       
+                       
+                       
+                           </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDatetimeLbl_5" class="text-justify">04/08/2022</span>
+                            </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDescLbl_5" class="text-justify">Extension in Joining Time in Favour of Dental Surgeons</span>
+                            </br><hr>
+                   
+
+                          
+
+                      
+                            <a id="ContentPlaceHolder1_Repeater1_intNewsId_6" href="{% static 'LatestNews48cc.html?Id=10079">
+                            <b><span id="ContentPlaceHolder1_Repeater1_txtTitleLbl_6">Grievacne Committee Meeting                                                                                                                                                                             </span></b>
+
+
+                       </a>
+                       
+                       
+                       
+                           </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDatetimeLbl_6" class="text-justify">04/08/2022</span>
+                            </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDescLbl_6" class="text-justify">Grievance Committee to Address the Grievances / Appications Submitted by the Dental Surgeons</span>
+                            </br><hr>
+                   
+
+                          
+
+                      
+                            <a id="ContentPlaceHolder1_Repeater1_intNewsId_7" href="{% static 'LatestNewsfd99.html?Id=10078">
+                            <b><span id="ContentPlaceHolder1_Repeater1_txtTitleLbl_7">Admissions open for Level-III (Year-I)                                                                                                                                                                  </span></b>
+
+
+                       </a>
+                       
+                       
+                       
+                           </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDatetimeLbl_7" class="text-justify">06/07/2022</span>
+                            </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDescLbl_7" class="text-justify">Admissions open for Level-III (Year-1) Postgraduate training for the Programs Offered in Various Public Medical / Dental Institutions of the Punjab.</span>
+                            </br><hr>
+                   
+
+                          
+
+                      
+                            <a id="ContentPlaceHolder1_Repeater1_intNewsId_8" href="{% static 'LatestNewscdad.html?Id=10077">
+                            <b><span id="ContentPlaceHolder1_Repeater1_txtTitleLbl_8">Entry Test for Admissions to Post RN Degree Program                                                                                                                                                     </span></b>
+
+
+                       </a>
+                       
+                       
+                       
+                           </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDatetimeLbl_8" class="text-justify">24/06/2022</span>
+                            </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDescLbl_8" class="text-justify">It is to Inform that entry test for admissions to Post RN Degree Program is scheduled to be held on 26th June 2022 at 01:30 PM</span>
+                            </br><hr>
+                   
+
+                          
+
+                      
+                            <a id="ContentPlaceHolder1_Repeater1_intNewsId_9" href="{% static 'LatestNews83bb.html?Id=79">
+                            <b><span id="ContentPlaceHolder1_Repeater1_txtTitleLbl_9">Admission Notice                                                                                                                                                                                        </span></b>
+
+
+                       </a>
+                       
+                       
+                       
+                           </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDatetimeLbl_9" class="text-justify">12/06/2022</span>
+                            </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDescLbl_9" class="text-justify">For One Year Post Basic Specialization.</span>
+                            </br><hr>
+                   
+
+                          
+
+                      
+                            <a id="ContentPlaceHolder1_Repeater1_intNewsId_10" href="{% static 'LatestNews5ab4.html?Id=78">
+                            <b><span id="ContentPlaceHolder1_Repeater1_txtTitleLbl_10">Admission Notice                                                                                                                                                                                        </span></b>
+
+
+                       </a>
+                       
+                       
+                       
+                           </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDatetimeLbl_10" class="text-justify">12/06/2022</span>
+                            </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDescLbl_10" class="text-justify">For Post BSN (Generic) 04 Years Degree Program.</span>
+                            </br><hr>
+                   
+
+                          
+
+                      
+                            <a id="ContentPlaceHolder1_Repeater1_intNewsId_11" href="{% static 'LatestNewsf6c1.html?Id=77">
+                            <b><span id="ContentPlaceHolder1_Repeater1_txtTitleLbl_11">Admission Notice                                                                                                                                                                                        </span></b>
+
+
+                       </a>
+                       
+                       
+                       
+                           </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDatetimeLbl_11" class="text-justify">12/06/2022</span>
+                            </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDescLbl_11" class="text-justify">For Post RN B.Sc Nursing (Two Years Degree Program).</span>
+                            </br><hr>
+                   
+
+                          
+
+                      
+                            <a id="ContentPlaceHolder1_Repeater1_intNewsId_12" href="{% static 'LatestNews0d22.html?Id=76">
+                            <b><span id="ContentPlaceHolder1_Repeater1_txtTitleLbl_12">Implementation of Executive Committee Meeting                                                                                                                                                           </span></b>
+
+
+                       </a>
+                       
+                       
+                       
+                           </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDatetimeLbl_12" class="text-justify">25/04/2022</span>
+                            </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDescLbl_12" class="text-justify">Implementation of Executive Committee Meeting decision held on Dated 14.01.2022</span>
+                            </br><hr>
+                   
+
+                          
+
+                      
+                            <a id="ContentPlaceHolder1_Repeater1_intNewsId_13" href="{% static 'LatestNews12eb.html?Id=75">
+                            <b><span id="ContentPlaceHolder1_Repeater1_txtTitleLbl_13">Approval for recruitment of Teaching Staff                                                                                                                                                              </span></b>
+
+
+                       </a>
+                       
+                       
+                       
+                           </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDatetimeLbl_13" class="text-justify">25/03/2022</span>
+                            </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDescLbl_13" class="text-justify">Request for Approval for recruitment of Teaching Staff on Contract Basis in the Speciality of basic Sciences and Clinical Sciences for a Period of 03 Years
+</span>
+                            </br><hr>
+                   
+
+                          
+
+                      
+                            <a id="ContentPlaceHolder1_Repeater1_intNewsId_14" href="{% static 'LatestNews59d6.html?Id=74">
+                            <b><span id="ContentPlaceHolder1_Repeater1_txtTitleLbl_14">Admissions open for Level-III (Year-1)                                                                                                                                                                  </span></b>
+
+
+                       </a>
+                       
+                       
+                       
+                           </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDatetimeLbl_14" class="text-justify">31/01/2022</span>
+                            </br>
+                            <span id="ContentPlaceHolder1_Repeater1_txtDescLbl_14" class="text-justify">Admissions open for Level-III (Year-1) Postgraduate training for the Programs Offered in Various Public Medical / Dental Institutions of the Punjab. </span>
+                            </br><hr>
+                   
+                        
+
+                    </marquee>
+                        </div>
+                    </div>
+
+
+                    <p class="br"><a href="{% static 'AllNews.html'%}">View All News</a></p>
+                    <span class="line text-right"></span>
+
+                </div>
+                <div class="col-md-8 ser-fet">
+                    <h3>
+                        Punjab Pharmacy Council</h3>
+                    <span class="line"></span>
+                    <div class="features">
+                        <div class="col-md-6 fet-pad">
+                            <div class="div-margin">
+                                <div class="col-md-3 fet-pad wid">
+                                    <a href="{% static 'HealthPolicy.html'%}" target="_blank"><span class="glyphicon glyphicon-heart aim-icn"
+                                        aria-hidden="true"></span></a>
+                                </div>
+                                <div class="col-md-9 fet-pad wid2">
+                                    <a href="{% url 'PharmD'%}" target="_blank">
+                                        <h4>
+                                            Universities</h4>
+                                    </a></a>
+                                    <p>
+                                        Attached Universities</p>
+                                </div>
+                                <div class="clearfix">
+                                </div>
+                            </div>
+                            <div class="div-margin">
+                                <div class="col-md-3 fet-pad wid">
+                                    <a href="{% url 'technician'%}" target="_blank"><span class="glyphicon glyphicon-plus aim-icn"
+                                        aria-hidden="true"></span></a>
+                                </div>
+                                <div class="col-md-9 fet-pad wid2">
+                                    <a href="{% url 'technician'%}" target="_blank">
+                                        <h4>
+                                            Pharmacy Technician</h4>
+                                    </a>
+                                    <p>
+                                        Pharmacy Technician Colleges</p>
+                                </div>
+                                <div class="clearfix">
+                                </div>
+                            </div>
+                            <div class="div-margin">
+                                <div class="col-md-3 fet-pad wid">
+                                    <a href="{% url 'PharmacyAssistant'%}" target="_blank"><span class="glyphicon glyphicon-education aim-icn"
+                                        aria-hidden="true"></span></a>
+                                </div>
+                                <div class="col-md-9 fet-pad wid2">
+                                    <a href="{% url 'PharmacyAssistant'%}" target="_blank">
+                                        <h4>
+                                            Pharmacy Assistant</h4>
+                                    </a>
+                                    <p>
+                                        Pharmacy Assistant Students list</p>
+                                </div>
+                                <div class="clearfix">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 fet-pad">
+                            <div class="div-margin">
+                                <div class="col-md-3 fet-pad wid">
+                                    <a href="{% url 'GoodStandingCertificate'%}" target="_blank"><span class="glyphicon glyphicon-user aim-icn"
+                                        aria-hidden="true"></span></a>
+                                </div>
+                                <div class="col-md-9 fet-pad wid2">
+                                    <a href="{% url 'GoodStandingCertificate'%}" target="_blank">
+                                        <h4>
+                                            Good Standing Certificate</h4>
+                                    </a>
+                                    <p>
+                                        Pharmacist/Pharmacy Technician</p>
+                                </div>
+                                <div class="clearfix">
+                                </div>
+                            </div>
+                            <div class="div-margin">
+                                <div class="col-md-3 fet-pad wid">
+                                    <a href="{% static 'LawsAndRules.html'%}" target="_blank"><span class="glyphicon glyphicon-ok aim-icn"
+                                        aria-hidden="true"></span></a>
+                                </div>
+                                <div class="col-md-9 fet-pad wid2">
+                                    <a href="{% static 'LawsAndRules.html'%}" target="_blank">
+                                        <h4>
+                                            Laws and The Rules</h4>
+                                    </a>
+                                    <p>
+                                        Established under Pharmacy Act, 1967 (Autonomous Body)</p>
+                                </div>
+                                <div class="clearfix">
+                                </div>
+                            </div>
+                            <div class="div-margin">
+                                <div class="col-md-3 fet-pad wid">
+                                    <a href="{% static 'PurchaseGoods.html'%}" target="_blank"><span class="glyphicon glyphicon-shopping-cart aim-icn"
+                                        aria-hidden="true"></span></a>
+                                </div>
+                                <div class="col-md-9 fet-pad wid2">
+                                    <a href="{% static 'PurchaseGoods.html'%}" target="_blank">
+                                        <h4>
+                                            Purchase Goods</h4>
+                                    </a>
+                                    <p>
+                                        Purchase of stores and capital goods for the department.</p>
+                                </div>
+                                <div class="clearfix">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix">
+                </div>
+            </div>
+        </div>
+        {% comment %} <div class="acheivments" id="acheive">
+            <div class="container top">
+                <h3>
+                    Achievements</h3>
+                <div class="gallery-grids">
+                    <ul>
+                        <li class="col-md-4 gal-alt"><a href="javascript:void(0)" target="_blank">
+                            <img src="{% static 'assets/img/MC-Block-SGRH.png'%}" alt="/" />
+                            <span class="hide-box">
+                                <h4>
+                                    Establishment of Mother & Child Block in Sir Ganga Ram Hospital, Lahore </h4>
+                                <!-- <p>Great transparency Rate.Lorem is a dummy Text.Lorem is a dummy Text.Lorem is a dummy Text.Lorem is a dummy Text</p> -->
+                            </span></li>
+                        </a>
+                        <li class="col-md-4 gal-alt"><a href="javascript:void(0)" target="_blank">
+                            <img src="{% static 'assets/img/Missing-Speciality-DHQ-Gujranwala.jpg'%}" alt="/" />
+                            <span class="hide-box">
+                                <h4>
+                                    Missing Specialties for Up-gradation of DHQ Teaching Hosp. Gujranwala</h4>
+                            </span></li>
+                        </a>
+                        <li class="col-md-4 gal-alt"><a href="javascript:void(0)" target="_blank">
+                            <img src="{% static 'assets/img/Sardar-Fateh-M-Khan-Buzdar-IC-DGKhan.jpg'%}" alt="/" />
+                            <span class="hide-box">
+                                <h4>
+                                    Establishment of Sardar Fateh M. Khan Buzdar Institute of Cardiology, DG Khan</h4>
+                            </span></li>
+                        </a>
+                        <li class="col-md-4 gal-alt"><a href="javascript:void(0)" target="_blank">
+                            <img src="{% static 'assets/img/IUT-Rawalpindi.png'%}" alt="/" />
+                            <span class="hide-box">
+                                <h4>
+                                    Institute of Urology & Transplantation Rawalpindi</h4>
+                            </span></li>
+                        </a>
+                        <li class="col-md-4 gal-alt"><a href="javascript:void(0)" target="_blank">
+                            <img src="{% static 'assets/img/UCHS-Lahore.png'%}" alt="/" />
+                            <span class="hide-box">
+                                <h4>
+                                    Establishment of University of Child Health Sciences, Lahore</h4>
+                            </span></li>
+                        </a>
+                        <li class="col-md-4 gal-alt"><a href="javascript:void(0)" target="_blank">
+                            <img src="{% static 'assets/img/1000-Bedded-LGH.png'%}" alt="/" />
+                            <span class="hide-box">
+                                <h4>
+                                    Establishment of 1,000 Bedded General Hospital in Lahore (Phase-I)</h4>
+                            </span></li>
+                        </a>
+                        <div class="clearfix">
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> {% endcomment %}
+    <!-- <div class="media-section" id="doc">
+        <h3>Media</h3>
+       
+        <script src="{% static 'scripts/js/owl.carousel.js'%}"></script>
+        <script>
+				$(document).ready(function() {
+					$("#owl-demo").owlCarousel({
+						items : 4,
+						loop:true,
+						lazyLoad : true,
+						autoPlay : true,
+						pagination : true,
+					});
+				});
+        </script>
+        
+        <div class="container">
+            <div id="owl-demo" class="owl-carousel text-center">
+                <div class="item g1">
+                    <img class="lazyOwl img-responsive item-img" data-id='1' data-code='yOz4fG-wLr4'
+                        data-src="{% static 'img/a1.jpg'%}" alt="name" data-toggle="modal" data-target=".bs-example-modal-lg">
+                    <div class="caption">
+                        <h4 class="item-title-heading1">
+                            Memorandum signed</h4>
+                        <span class="item-description1">A second Memorandum of Understanding has been signed
+                            between Government of the Punjab and Novartis Pharma.</span>
+                        <input type="hidden" id="itemHeading1" value="A second Memorandum of Understanding has been signed between Government of the Punjab and Novartis Pharma to provide free medicines worth rupees 6 billion to the patients of 4 different diseases; namely diabetes, breast cancer, heart and respiratory diseases.
+Initially, this program will benefit approximately 350,000 patients with a budget allocation of Rs 550 million. An innovative software will be used to strengthen the supply chain and treat and monitor patient access and adherence to their treatments. The data will also enable the Punjab Government to measure the social impact of this program.
+The first MoU between Specialized Healthcare and Medical Education Department and Novartis Pharma Pakistan was signed to provide healthcare facilities and free medicines to cancer patients. A total of 9,000 cancer patients will benefit from this program added to those already benefiting form it.">
+                    </div>
+                </div>
+                <div class="item g1">
+                    <img class="lazyOwl img-responsive item-img" data-id='2' data-code='H_8kStfsX9w'
+                        data-src="{% static 'img/a2.jpg'%}" alt="name" data-toggle="modal" data-target=".bs-example-modal-lg">
+                    <div class="caption">
+                        <h4 class="item-title-heading2">
+                            Achievments in the health sector</h4>
+                        <span class="item-description2">Najam Ahmad Shah briefing the media about the progress
+                            achieved in the health sector</span>
+                        <input type="hidden" id="itemHeading2" value="Secretary Specialized Healthcare & Medical Education Najam Ahmad Shah briefing the media about the progress achieved in the health sector.">
+                    </div>
+                </div>
+                <div class="item g1">
+                    <img class="lazyOwl img-responsive item-img" data-id='3' data-code='LZb8SS-t5l0'
+                        data-src="{% static 'img/a3.jpg'%}" alt="name" data-toggle="modal" data-target=".bs-example-modal-lg">
+                    <div class="caption">
+                        <h4 class="item-title-heading3">
+                            Constructed Gynae Block</h4>
+                        <span class="item-description3">Punjab Minister for SH&ME Kh. Salman Rafique inaugurating
+                            the newly constructed Gynae Block of Sir Ganga Ram Hospital.</span>
+                        <input type="hidden" id="itemHeading3" value="Punjab Minister for SH&ME Kh. Salman Rafique inaugurating the newly constructed Gynae Block of Sir Ganga Ram Hospital.">
+                    </div>
+                </div>
+                <div class="item g1">
+                    <img class="lazyOwl img-responsive item-img" data-id='4' data-code='tsS4NZ7gb10'
+                        data-src="{% static 'img/a4.jpg'%}" alt="name" data-toggle="modal" data-target=".bs-example-modal-lg">
+                    <div class="caption">
+                        <h4 class="item-title-heading4">
+                            Online Database System</h4>
+                        <span class="item-description4">Sir Ganga Ram Hospital's Skill Lab has been upgraded;
+                            patients’ online database system introduced.</span>
+                        <input type="hidden" id="itemHeading4" value="Sir Ganga Ram Hospital's Skill Lab has been upgraded. patients’ online database system introduced.">
+                    </div>
+                </div>
+                <div class="item g1">
+                    <img class="lazyOwl img-responsive item-img" data-id='5' data-code='mRjO8rOG0G4'
+                        data-src="{% static 'img/a5.jpg'%}" alt="name" data-toggle="modal" data-target=".bs-example-modal-lg">
+                    <div class="caption">
+                        <h4 class="item-title-heading5">
+                            100 New Wheelchairs</h4>
+                        <span class="item-description5">Najam Ahmed Shah has directed the department to provide
+                            100 new wheelchairs to the Emergency Department of Mayo Hospital immediately.</span>
+                        <input type="hidden" id="itemHeading5" value="Secretary Specialized Healthcare and Medical Education, Najam Ahmed Shah has directed the department to provide 100 new wheelchairs to the Emergency Department of Mayo Hospital immediately.">
+                    </div>
+                </div>
+                <div class="item g1">
+                    <img class="lazyOwl img-responsive item-img" data-id='6' data-code='tai_Dw73LzI'
+                        data-src="{% static 'img/a6.jpg'%}" alt="name" data-toggle="modal" data-target=".bs-example-modal-lg">
+                    <div class="caption ">
+                        <h4 class="item-title-heading6">
+                            Setting up 500 bedded Hospital</h4>
+                        <span class="item-description6">Secretary Health Najam Ahmad Shah is now addressing
+                            the Road Show organized by Punjab Health Initiative Management Company.</span>
+                        <input type="hidden" id="itemHeading6" value="Setting up a minimum 500 bedded Hospital under Public Private Partnership
+Secretary Health Najam Ahmad Shah is now addressing the Road Show organized by Punjab Health Initiative Management Company.">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="social-label" id="contact">
+        <div class="col-md-4 text-label">
+            <p>
+                Follow, Like, Share us on Social.</p>
+        </div>
+        <div class="col-md-8 social-icn">
+            <ul>
+               <li><a href="https://www.facebook.com/SHCMEHealth" target="_blank" class="face">
+                </a></li>
+		<li><a href="https://twitter.com/SHCMEHealth" target="_blank" class="twit"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="clearfix">
+        </div>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.041589914887!2d74.28222927481384!3d31.52301764701274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391903126518cb9d%3A0x17da63707d9b18d0!2sPunjab%20Pharmacy%20Council%2C%20Lahore!5e0!3m2!1sen!2s!4v1685961056754!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+     <script type="text/javascript">
+         /*
+         function showPopup() {
+         $("#cnpPopup").modal("show")
+         }
+         window.onload = showPopup;
+         */
+         
+    </script>
+    <!-- body ends here -->
+    <!-- Popup Modal Start Here-->
+    <!--<div class="modal fade" id="cnpPopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        Entry Test for Admissions to Post RN Degree Program</h4>
+                </div>
+                <div class="modal-body">
+                    It is to Inform that entry test for admissions to Post RN Degree Program is scheduled to be held on 26th June 2022 at 01:30 PM at Examination Halls, University of the Punjab, Wahdat Road , Lahore/ University of Health Sciences, Lahore as indicated on Roll No. Slips.<div class="br2"></div>
+
+                    All the candidates/ applicants are requested to download their roll number slips from the official <a href="{% static 'http://pnas2.phf.gop.pk/pnas/account?returnUrl=%2Fhelpline%2Fuser" target="_blank"><b>Web Portal</b></a>.<div class="br2"></div>
+
+                    This is being informed well before time to avoid any sort of inconvenience.<div class="br2"></div>
+
+                    NOTE:<div class="br2"></div>
+
+
+                    <b>Entry in the Examination centre shall not be allowed without Entry/Admit Card and Original CNIC.</b><div class="br2"></div>
+
+
+                    <b>Mobile phones and other gadgets are strictly prohibited.</b>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Close</button>
+                      </div>
+            </div>
+        </div>
+    </div>-->
+    <!-- Popup Modal Ends Here-->
+    <!--Popup Windows Starts -->
+    <!--<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close stopVideo" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="gridSystemModalLabel">
+                        Media Title Here</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7 source1">
+                            <video width="450"  controls>
+							<source src="{% static 'video/1.mp4" class="source2" type="video/ogg">
+							Your browser does not support HTML5 video.
+							</video> 
+                        </div>
+                        <div class="col-md-5">
+                            <p class="contentDescription">
+                                 <marquee direction="up" scrollamount="1"  height="400" class="items-text"></marquee> 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default stopVideo" data-dismiss="modal">
+                        Close</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- /.modal-main class -->
+    <!--Popup Windows ends -->
+    <script type="text/javascript">
+    /*
+        $(document).ready(function () {
+
+            //on close video streaming also close when close popup window
+            $(".stopVideo").click(function () {
+                $(".source1").html('');
+            });
+
+
+            //on click show video on popup window
+            $(".item-img").click(function () {
+
+                $('.contentDescription').html('<marquee direction="up" scrollamount="4" onMouseOver="this.stop();" OnMouseOut="this.start();" height="275" class="items-text"></marquee>');
+                var id = $(this).attr("data-id");
+                var src = "https://www.youtube.com/embed/" + $(this).attr("data-code");
+                var txtTitle = $(".item-title-heading" + id).text();
+                var txtItemHeading = $("#itemHeading" + id).val();
+                $('.items-text').text(txtItemHeading);
+                $('#gridSystemModalLabel').html(txtTitle);
+                $(".source1").html('<div align="center" class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="{% static '' + src + '"  frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></div>');
+            });
+        });
+        */
+    </script>
+    </form>
+
+    <div class="contact">
+        <div class="contact-form">
+            <div class="container">
+                <div class="col-md-3 pd useful-links">
+                    <h3>
+                        Important Links Links</h3>
+                    <ul>
+                        <li><a href="https://pcpisb.gov.pk/" target="_blank"><i
+                            class="glyphicon glyphicon-chevron-right"></i>Pakistan Pharmacy Council</a></li>
+                        <li><a href="https://www.facebook.com/kppharmacycouncil/" target="_blank"><i
+                            class="glyphicon glyphicon-chevron-right"></i>KPK Pharmacy Council</a></li>
+                        <li><a href="https://pcsindh.com/" target="_blank"><i class="glyphicon glyphicon-chevron-right">
+                        </i>Sindh Pharmacy Council</a></li>
+                        <li><a href="https://www.facebook.com/PCB.GOB/" target="_blank"><i
+                            class="glyphicon glyphicon-chevron-right"></i>Balochistan Pharmacy Council</a></li>
+                    </ul>
+                    </p></div>
+                <div class="col-md-3 pd useful-links">
+                    <h3>
+                        Useful Links</h3>
+                    <ul>
+                        <li><a href="{% url 'home'%}"><i class="glyphicon glyphicon-chevron-right"></i>Home</a></li>
+                        <li><a href="{% url 'about'%}"><i class="glyphicon glyphicon-chevron-right"></i>About</a></li>
+                        <li><a href="{% url 'institutionsList'%}"><i class="glyphicon glyphicon-chevron-right"></i>Institutions</a></li>
+                        <li><a href="{% url 'download'%}"><i class="glyphicon glyphicon-chevron-right"></i>Download</a></li>
+                        <li><a href="{% url 'Tenders'%}"><i class="glyphicon glyphicon-chevron-right"></i>Tenders</a></li>
+                        <li><a href="{% url 'contact'%}"><i class="glyphicon glyphicon-chevron-right"></i>Contact
+                            Us</a></li>
+                        <li><a href="{% url 'Examination'%}"><i class="glyphicon glyphicon-chevron-right"></i>Examination</a></li>
+                        <li><a href="{% url 'sitemap'%}"><i class="glyphicon glyphicon-chevron-right"></i>Site Map</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 pd adress">
+                    <h3>
+                        Location</h3>
+                    <p>
+                        <span class="glyphicon glyphicon-map-marker"></span>Flat 12-13 Block، 7, Huma Block Allama Iqbal Town, Lahore, Punjab 54000, Pakistan( <a class="primary" href="https://www.google.com/maps/dir//Flat+12-13+Block%D8%8C+Punjab+Pharmacy+Council,+Lahore,+7,+Huma+Block+Allama+Iqbal+Town,+Lahore,+Punjab+54000,+Pakistan%E2%80%AD/@31.5230176,74.2822293,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x391903126518cb9d:0x17da63707d9b18d0!2m2!1d74.2848116!2d31.523008?entry=ttu"
+                            target="_blank">Google Map Link</a> )</p>
+                    <br />
+                    <p>
+                        <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>042-99206277</p>
+                    <br />
+                    <p>
+                        <a href="mailto:punjabpharmacycouncil@hotmail.com"><span class="glyphicon glyphicon-envelope"
+                            aria-hidden="true"></span>punjabpharmacycouncil@hotmail.com</a></p>
+                    <br />
+                </div>
+                <div class="col-md-2 pd adress">
+                    <h3>
+                        Social Media</h3>
+                    <span><a href="{% static 'https://www.facebook.com/SHCMEHealth" target="_blank">
+                        <img alt="Facebook" src="{% static 'assets/img/fb-icon.png'%}">
+                    </a></span><span><a href="https://twitter.com/SHCMEHealth" target="_blank">
+                        <img alt="Twitter" src="{% static 'assets/img/twitter-icon.png' %}">
+                    </a></span>
+                </div>
+                <div class="clearfix">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-text">
+                <p>
+                    Powered by PG Soft</p>
+                <p>
+                    &#169;2023 Punjab Pharmacy Council, Lahore</p>
+            </div>
+        </div>
+    </div>
+    <a href="{% url 'home'%}" id="toTop" class="scroll" style="display: block;"><span id="toTopHover"
+        style="opacity: 1;"></span></a>
+</body>
+
+</html>

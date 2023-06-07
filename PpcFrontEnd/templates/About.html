@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}PPC - About{% endblock %}
+
+{% block content %}
+    <!-- Body content starts here -->
+    <section id="page-breadcrumb">
+		   <div class="container">
+		     <div class="row">
+		       <div class="col-md-12">
+		         <div class="page-breadcrumb-area">
+		           <h2>About Us</h2>
+		           <ol class="breadcrumb">
+		            <li><a href="{% url 'home' %}">Home</a></li>            
+		            <li class="active">About Us</li>
+		          </ol>
+		         </div>
+		       </div>
+		     </div>
+		   </div>
+		 </section>
+    <div class="container set-min-height">
+        <div class="row">
+            <div class="col-md-12 ser-fet">
+                <h3 class="br2">
+                    About Us</h3>
+                <hr>
+            <ul>
+                <li><a href="Overview.html">Overview</a></li>
+                <li><a href="SecretaryHealth.html">Our Secretaries</a></li>
+                <li><a href="Administration.html">Administration</a></li>
+                <li><a href="Contact.html">Core Team</a></li>
+                <li><a href="Initiatives.html">Initiatives</a></li>
+                <li><a href="RulesAndRegulations.html">Rules and Regulations</a></li>
+                <li><a href="Faqs.html">FAQs</a></li>
+            </ul>
+            <div class="br2"></div>
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}
+
+    

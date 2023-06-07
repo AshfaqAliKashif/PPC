@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}PPC - Examination{% endblock %}
+
+{% block content %} 
+<!-- Body content starts here -->
+    <section id="page-breadcrumb">
+		   <div class="container">
+		     <div class="row">
+		       <div class="col-md-12">
+		         <div class="page-breadcrumb-area">
+		           <h2>Examinations</h2>
+		           <ol class="breadcrumb">
+		            <li><a href="{% url 'home' %}">Home</a></li>            
+		            <li><a href="{% url 'Services' %}">Services</a></li> 
+                    <li class="active">Examination</li>
+		          </ol>
+		         </div>
+		       </div>
+		     </div>
+		   </div>
+		 </section>
+        <div class="container set-min-height">
+            <div class="row">
+                <div class="col-md-12 ser-fet">
+                    <h3 class="br2">
+                      Examinations</h3>
+                    <hr>
+
+                    <div class="text-justify">
+                      Pharmacy Technician:
+                    <div class="br2"></div>
+                    <ul>
+                        <li>Eligibility : Minimum Matric with Sciences.</li>
+                        <li>Duration: 2 Years, regular course.</li>
+                    </ul>
+                    <br>
+                    <div class="text-justify">
+                      Pharmacy Assistant:
+                    <div class="br2"></div>
+                    <ul>
+                        <li>Eligibility : Minimum Matric with Sciences or General Science.</li>
+                        <li>Duration:2 Years, apprenticeship training under supervision of registered & notified pharmacist by Health Department. OR Qualified dispenser with PMF</li>
+                    </ul>
+                    <div class="br2"></div>
+                </div>
+            </div>
+        </div>
+        {% endblock %}

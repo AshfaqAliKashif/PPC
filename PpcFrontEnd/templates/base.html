@@ -1,0 +1,398 @@
+{% load static %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Home | Punjab Pharmacy Council, Lahore</title>
+<meta charset="utf-8" /><meta name="robots" content="all" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="keywords" content="Punjab Pharmacy Council &amp; Punjab Pharmacy Council Template or PPC &amp; Pharmacy Department" /><meta name="description" content="Punjab Pharmacy Council &amp; Punjab Pharmacy Council Template or PPC &amp; Pharmacy Department" /><meta name="author" content="Punjab Pharmacy Council &amp; Punjab Pharmacy Council Template or PPC &amp; Pharmacy Department" />
+    
+    <!--Favicon-->
+    <link rel="shortcut icon" href="{% static 'assets/img/ftdrupal001_favicon.ico'%}" type="image/x-icon" />
+    <!--Favicon-->
+    <!--fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Monda:400,700" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700" rel="stylesheet" type="text/css" />
+    <!--fonts-->
+    <!--owlcss-->
+    <link href="{% static 'assets/css/owl.carousel.css'%}" rel="stylesheet" />
+    <!--bootstrap-->
+    <link href="{% static 'assets/css/bootstrap.min.css'%}" rel="stylesheet" type="text/css" />
+    <!--coustom css-->
+    <link href="{% static 'assets/css/style1.css'%}" rel="stylesheet" type="text/css" />
+    <!--default-js-->
+    <script src="{% static 'assets/js/jquery-2.1.4.min.js'%}"></script>
+    <!--bootstrap-js-->
+    <script src="{% static 'assets/js/bootstrap.min.js'%}"></script>
+    <!--script-->
+    <script type="text/javascript" src="{% static 'assets/js/move-top.js'%}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/easing.js'%}"></script>
+    <!--script File for Data Tables-->
+    <script type="text/javascript" src="{% static 'assets/js/jquery.dataTables.min.js'%}"></script>
+    <!--CSS File for Data Tables-->
+    <link href="{% static 'assets/css/jquery.dataTables.css'%}" rel="stylesheet" type="text/css" />
+    <title>{% block title %}PPC{% endblock %}</title>
+</head>
+<body>
+    <div class="header" id="home">
+        <div class="header-top">
+            <nav class="navbar chn-gd primary-menu-navbar">
+					<!-- Brand and toggle get grouped for better mobile display -->
+
+					<div class="row">
+					<div class="col-md-4">
+
+					<ul class="nav navbar-nav navbar-right primary-right-menu">
+					<li><a href="javascript:void(0);"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>  042-99260298</a></li>
+					<li><a href="{% static 'mailto:punjabpharmacycouncil@hotmail.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  <small>punjabpharmacycouncil@hotmail.com</small></a></li>
+					</ul>
+
+
+					</div>
+					<div class="col-md-8">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+						
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+					<ul class="nav navbar-nav navbar-right primary-right-menu">
+                         <!---->
+                    
+                        <li>
+						<a href="{% url 'home'%}">
+						Home
+						</a>
+						</li>
+                        <!---->
+                        <li>
+                        <a href="{% url 'about' %}">
+                        About Us
+                        </a>
+                        </li>
+                        <!---->
+						<li>
+						<a href="{% url 'institutionsList'%}">
+						Institutions
+						</a>
+						</li>
+						<!---->
+						<li>
+						<a href="{% url 'download'%}">
+						Downloads
+						</a>
+						</li>
+						<!---->
+						<li>
+						<a href="{% url 'Tenders'%}">
+						Tenders
+						</a>
+						</li>
+						<!---->
+                        <li>	
+						<a href="{% url 'contact'%}">
+						Contact Us
+						</a>
+						</li>
+                        <!---->
+                        <li>	
+						<a href="{% url 'do_login'%}">
+						Login
+						</a>
+						</li>
+                        <!---->
+					</ul>
+					</div><!-- /.navbar-collapse -->
+					<div class="clearfix"></div>
+					</div>
+					</div>
+
+		
+				</nav>
+        </div>
+        <!-- </div>
+ -->
+        <div class="header_nav" id="home">
+            <nav class="navbar navbar-default chn-gd">
+					<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand logo-st" href="/"><img src="{% static 'assets/img/home.png'%}" alt="Logo" class="img-responsive home-img"></a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+                        <li>	
+						<a href="{% url 'Examination'%}">
+						<span class="glyphicon glyphicon-list-alt icn_pos" aria-hidden="true"></span><br>
+						Examination
+						</a>
+						</li>
+                        <li>
+						<a href="{% url 'Budget'%}">
+						<span class="glyphicon glyphicon-plus icn_pos hm" aria-hidden="true"></span><br>
+						Budget
+						</a>
+						</li>
+						<!---->
+						<li>
+						<a href="{% url 'Services'%}">
+						<span class="glyphicon glyphicon-cog icn_pos" aria-hidden="true"></span><br>
+						Services
+						</a>
+						</li>
+						<!---->
+						<li>
+						<a href="{% url 'Functions'%}">
+						<span class="glyphicon glyphicon-briefcase icn_pos" aria-hidden="true"></span><br>
+						Functions
+						</a>
+						</li>
+						<!---->
+						<li>
+						<a href="{% url 'Notifications'%}">
+						<span class="glyphicon glyphicon-bell icn_pos hm2" aria-hidden="true"></span><br>
+						Notifications
+						</a>
+						</li>
+						<!---->
+						<li>	
+						<a href="{% url 'Faqs'%}">
+						<span class="glyphicon glyphicon-list icn_pos" aria-hidden="true"></span><br>
+						FAQs
+						</a>
+						</li>
+						
+
+						<!--script-->
+						<script type="text/javascript">
+						    jQuery(document).ready(function ($) {
+						        $(".scroll").click(function (event) {
+						            event.preventDefault();
+						            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 900);
+						        });
+						    });
+						</script>
+						<!--script-->
+					</ul>
+					</div><!-- /.navbar-collapse -->
+					<div class="clearfix"></div>
+					</div><!-- /.container-fluid -->
+				</nav>
+        </div>
+    </div>
+    
+    {% block content %} {% endblock %}
+
+    <div class="social-label" id="contact">
+        <div class="col-md-4 text-label">
+            <p>
+                Follow, Like, Share us on Social.</p>
+        </div>
+        <div class="col-md-8 social-icn">
+            <ul>
+               <li><a href="https://www.facebook.com/SHCMEHealth" target="_blank" class="face">
+                </a></li>
+		<li><a href="https://twitter.com/SHCMEHealth" target="_blank" class="twit"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="clearfix">
+        </div>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.041589914887!2d74.28222927481384!3d31.52301764701274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391903126518cb9d%3A0x17da63707d9b18d0!2sPunjab%20Pharmacy%20Council%2C%20Lahore!5e0!3m2!1sen!2s!4v1685961056754!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+     <script type="text/javascript">
+         /*
+         function showPopup() {
+         $("#cnpPopup").modal("show")
+         }
+         window.onload = showPopup;
+         */
+         
+    </script>
+    <!-- body ends here -->
+    <!-- Popup Modal Start Here-->
+    <!--<div class="modal fade" id="cnpPopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        Entry Test for Admissions to Post RN Degree Program</h4>
+                </div>
+                <div class="modal-body">
+                    It is to Inform that entry test for admissions to Post RN Degree Program is scheduled to be held on 26th June 2022 at 01:30 PM at Examination Halls, University of the Punjab, Wahdat Road , Lahore/ University of Health Sciences, Lahore as indicated on Roll No. Slips.<div class="br2"></div>
+
+                    All the candidates/ applicants are requested to download their roll number slips from the official <a href="{% static 'http://pnas2.phf.gop.pk/pnas/account?returnUrl=%2Fhelpline%2Fuser" target="_blank"><b>Web Portal</b></a>.<div class="br2"></div>
+
+                    This is being informed well before time to avoid any sort of inconvenience.<div class="br2"></div>
+
+                    NOTE:<div class="br2"></div>
+
+
+                    <b>Entry in the Examination centre shall not be allowed without Entry/Admit Card and Original CNIC.</b><div class="br2"></div>
+
+
+                    <b>Mobile phones and other gadgets are strictly prohibited.</b>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Close</button>
+                      </div>
+            </div>
+        </div>
+    </div>-->
+    <!-- Popup Modal Ends Here-->
+    <!--Popup Windows Starts -->
+    <!--<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close stopVideo" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="gridSystemModalLabel">
+                        Media Title Here</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7 source1">
+                            <video width="450"  controls>
+							<source src="{% static 'video/1.mp4" class="source2" type="video/ogg">
+							Your browser does not support HTML5 video.
+							</video> 
+                        </div>
+                        <div class="col-md-5">
+                            <p class="contentDescription">
+                                 <marquee direction="up" scrollamount="1"  height="400" class="items-text"></marquee> 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default stopVideo" data-dismiss="modal">
+                        Close</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- /.modal-main class -->
+    <!--Popup Windows ends -->
+    <script type="text/javascript">
+    /*
+        $(document).ready(function () {
+
+            //on close video streaming also close when close popup window
+            $(".stopVideo").click(function () {
+                $(".source1").html('');
+            });
+
+
+            //on click show video on popup window
+            $(".item-img").click(function () {
+
+                $('.contentDescription').html('<marquee direction="up" scrollamount="4" onMouseOver="this.stop();" OnMouseOut="this.start();" height="275" class="items-text"></marquee>');
+                var id = $(this).attr("data-id");
+                var src = "https://www.youtube.com/embed/" + $(this).attr("data-code");
+                var txtTitle = $(".item-title-heading" + id).text();
+                var txtItemHeading = $("#itemHeading" + id).val();
+                $('.items-text').text(txtItemHeading);
+                $('#gridSystemModalLabel').html(txtTitle);
+                $(".source1").html('<div align="center" class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="{% static '' + src + '"  frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></div>');
+            });
+        });
+        */
+    </script>
+    </form>
+
+    <div class="contact">
+        <div class="contact-form">
+            <div class="container">
+                <div class="col-md-3 pd useful-links">
+                    <h3>
+                        Important Links Links</h3>
+                    <ul>
+                        <li><a href="https://pcpisb.gov.pk/" target="_blank"><i
+                            class="glyphicon glyphicon-chevron-right"></i>Pakistan Pharmacy Council</a></li>
+                        <li><a href="https://www.facebook.com/kppharmacycouncil/" target="_blank"><i
+                            class="glyphicon glyphicon-chevron-right"></i>KPK Pharmacy Council</a></li>
+                        <li><a href="https://pcsindh.com/" target="_blank"><i class="glyphicon glyphicon-chevron-right">
+                        </i>Sindh Pharmacy Council</a></li>
+                        <li><a href="https://www.facebook.com/PCB.GOB/" target="_blank"><i
+                            class="glyphicon glyphicon-chevron-right"></i>Balochistan Pharmacy Council</a></li>
+                    </ul>
+                    </p></div>
+                <div class="col-md-3 pd useful-links">
+                    <h3>
+                        Useful Links</h3>
+                    <ul>
+                        <li><a href="{% url 'home'%}"><i class="glyphicon glyphicon-chevron-right"></i>Home</a></li>
+                        <li><a href="{% url 'about'%}"><i class="glyphicon glyphicon-chevron-right"></i>About</a></li>
+                        <li><a href="{% url 'institutionsList'%}"><i class="glyphicon glyphicon-chevron-right"></i>Institutions</a></li>
+                        <li><a href="{% url 'download'%}"><i class="glyphicon glyphicon-chevron-right"></i>Download</a></li>
+                        <li><a href="{% url 'Tenders'%}"><i class="glyphicon glyphicon-chevron-right"></i>Tenders</a></li>
+                        <li><a href="{% url 'contact'%}"><i class="glyphicon glyphicon-chevron-right"></i>Contact
+                            Us</a></li>
+                        <li><a href="{% url 'Examination'%}"><i class="glyphicon glyphicon-chevron-right"></i>Examination</a></li>
+                        <li><a href="{% url 'sitemap'%}"><i class="glyphicon glyphicon-chevron-right"></i>Site Map</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 pd adress">
+                    <h3>
+                        Location</h3>
+                    <p>
+                        <span class="glyphicon glyphicon-map-marker"></span>Flat 12-13 Block، 7, Huma Block Allama Iqbal Town, Lahore, Punjab 54000, Pakistan( <a class="primary" href="https://www.google.com/maps/dir//Flat+12-13+Block%D8%8C+Punjab+Pharmacy+Council,+Lahore,+7,+Huma+Block+Allama+Iqbal+Town,+Lahore,+Punjab+54000,+Pakistan%E2%80%AD/@31.5230176,74.2822293,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x391903126518cb9d:0x17da63707d9b18d0!2m2!1d74.2848116!2d31.523008?entry=ttu"
+                            target="_blank">Google Map Link</a> )</p>
+                    <br />
+                    <p>
+                        <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>042-99206277</p>
+                    <br />
+                    <p>
+                        <a href="mailto:punjabpharmacycouncil@hotmail.com"><span class="glyphicon glyphicon-envelope"
+                            aria-hidden="true"></span>punjabpharmacycouncil@hotmail.com</a></p>
+                    <br />
+                </div>
+                <div class="col-md-2 pd adress">
+                    <h3>
+                        Social Media</h3>
+                    <span><a href="{% static 'https://www.facebook.com/SHCMEHealth" target="_blank">
+                        <img alt="Facebook" src="{% static 'assets/img/fb-icon.png'%}">
+                    </a></span><span><a href="https://twitter.com/SHCMEHealth" target="_blank">
+                        <img alt="Twitter" src="{% static 'assets/img/twitter-icon.png' %}">
+                    </a></span>
+                </div>
+                <div class="clearfix">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-text">
+                <p>
+                    Powered by PG Soft</p>
+                <p>
+                    &#169;2023 Punjab Pharmacy Council, Lahore</p>
+            </div>
+        </div>
+    </div>
+    <a href="{% url 'home'%}" id="toTop" class="scroll" style="display: block;"><span id="toTopHover"
+        style="opacity: 1;"></span></a>
+</body>
+
+</html>

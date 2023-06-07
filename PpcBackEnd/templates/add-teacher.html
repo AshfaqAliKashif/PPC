@@ -1,0 +1,236 @@
+{% extends 'BackEndBase.html' %}
+{% load static%}
+{% block title %}College - Add{% endblock title %}
+{% block content %}
+
+<div class="page-wrapper">
+<div class="content container-fluid">
+
+<div class="page-header">
+<div class="row align-items-center">
+<div class="col">
+<h3 class="page-title">Add College</h3>
+<ul class="breadcrumb">
+<li class="breadcrumb-item"><a href="teachers.html">Teachers</a></li>
+<li class="breadcrumb-item active">Add College</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+<div class="card">
+<div class="card-body">
+<form action="" method="POST" enctype="multipart/form-data" novalidate>
+    {% csrf_token %}
+    {% comment %} {% if form.non_field_errors %}
+    {% for error in form.non_field_errors %}
+    {{error}}
+    {% endfor %}
+    {% endif %}
+<br> <br> {% endcomment %}
+<div class="row">
+<div class="col-12">
+<h5 class="form-title"><span>Basic Details</span></h5>
+</div>
+{% comment %} {% for fm in form %}
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms form-control">
+    {{fm.label_tag}} {{fm}}<br> {{fm.errors|striptags}}
+</div>
+</div>
+{% endfor%} {% endcomment %}
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Name <span class="login-danger">*</span></label>
+<input type="text" class="form-control" name="college_name" placeholder="Enter College Name">
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Mobile <span class="login-danger">*</span></label>
+<input type="text" class="form-control" name="college_mobile" placeholder="Mobile No.">
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Official No. <span class="login-danger">*</span></label>
+<input type="text" class="form-control" name="contact_no" placeholder="Contact No.">
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Website<span class="login-danger">*</span></label>
+<input type="text" class="form-control" name="college_site" placeholder="College Site URL">
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Representavie Name<span class="login-danger">*</span></label>
+<input type="text" class="form-control" name="person_name" placeholder="Enter Name">
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Representavie Email<span class="login-danger">*</span></label>
+<input type="Email" class="form-control" name="email" placeholder="Enter Email">
+</div>
+</div>
+<div class="col-12">
+<h5 class="form-title"><span>Address</span></h5>
+</div> 
+<div class="col-12">
+<div class="form-group local-forms">
+<label>Address <span class="login-danger">*</span></label>
+<input type="text" class="form-control" name="College_Address" placeholder="Enter address">
+</div>
+</div>
+{% comment %} <div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Division<span class="login-danger">*</span></label>
+<select class="form-control select" name="college_division">
+    <option selected disabled=true>Divisons</option>
+    <option>Lahore</option>
+    <option>Faisalabad</option>
+    </select>
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label >District<span class="login-danger">*</span></label>
+<select class="form-control select" name="college_district">
+    <option selected disabled=true>Districts</option>
+    <option>Attock</option>
+    <option>Bahawalpur</option>
+    </select>
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Town<span class="login-danger">*</span></label>
+<select class="form-control select name="college_town">
+    <option selected disabled=true>Towns</option>
+    <option>Shalimar</option>
+    <option>Wahga</option>
+    </select>
+</div>
+</div> {% endcomment %}
+{% comment %} <div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Gender <span class="login-danger">*</span></label>
+<select class="form-control select">
+<option>Male</option>
+<option>Female</option>
+<option>Others</option>
+</select>
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms calendar-icon">
+<label>Date Of Birth <span class="login-danger">*</span></label>
+<input class="form-control datetimepicker" type="text" placeholder="DD-MM-YYYY">
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Mobile <span class="login-danger">*</span></label>
+<input type="text" class="form-control" placeholder="Enter Phone">
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms calendar-icon">
+<label>Joining Date <span class="login-danger">*</span></label>
+<input class="form-control datetimepicker" type="text" placeholder="DD-MM-YYYY">
+</div>
+</div>
+<div class="col-12 col-sm-4 local-forms">
+<div class="form-group">
+<label>Qualification <span class="login-danger">*</span></label>
+<input class="form-control" type="text" placeholder="Enter Joining Date">
+</div>
+</div>
+ <div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Experience <span class="login-danger">*</span></label>
+<input class="form-control" type="text" placeholder="Enter Experience">
+</div>
+</div>
+<div class="col-12">
+<h5 class="form-title"><span>Login Details</span></h5>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Username <span class="login-danger">*</span></label>
+<input type="text" class="form-control" placeholder="Enter Username">
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Email ID <span class="login-danger">*</span></label>
+<input type="email" class="form-control" placeholder="Enter Mail Id">
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Password <span class="login-danger">*</span></label>
+<input type="text" class="form-control" placeholder="Enter Password">
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Repeat Password <span class="login-danger">*</span></label>
+<input type="text" class="form-control" placeholder="Repeat Password">
+</div>
+</div>
+
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>City <span class="login-danger">*</span></label>
+<input type="text" class="form-control" placeholder="Enter City">
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>State <span class="login-danger">*</span></label>
+<input type="text" class="form-control" placeholder="Enter State">
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Zip Code <span class="login-danger">*</span></label>
+<input type="text" class="form-control" placeholder="Enter Zip">
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Country <span class="login-danger">*</span></label>
+<input type="text" class="form-control" placeholder="Enter Country">
+</div>
+</div> {% endcomment %}
+<div class="col-12">
+<div class="student-submit">
+<center><button type="submit" class="btn btn-primary">Submit</button></center>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+{% endblock content %}
+
+.no-border {
+    border: none;
+    /* Add any other desired styling */
+}
+
+.CollegeForm input {
+    border: none;
+    /* Add any other desired styling */
+}

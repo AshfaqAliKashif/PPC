@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}PPC - Downloads{% endblock %}
+
+{% block content %}
+    <!-- Body content starts here -->
+    <section id="page-breadcrumb">
+		   <div class="container">
+		     <div class="row">
+		       <div class="col-md-12">
+		         <div class="page-breadcrumb-area">
+		           <h2>Downloads</h2>
+		           <ol class="breadcrumb">
+		            <li><a href="{% url 'home' %}">Home</a></li>            
+                    <li class="active">Downloads</li>
+		          </ol>
+		         </div>
+		       </div>
+		     </div>
+		   </div>
+		 </section>
+        <div class="container set-min-height">
+            <div class="row">
+                <div class="col-md-12 ser-fet">
+                    <h3 class="br2">
+                        Downloads</h3>
+                    <hr>
+
+                  <div class="table-responsive">
+                    <div>
+	<table class="table table-striped table-bordered table-hover" cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_getDownloadsData" style="border-collapse:collapse;">
+		<thead>
+			<tr>
+				<th scope="col">Sr.No.</th><th scope="col">Description</th><th scope="col">Download</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+				<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+			</tr>
+		</tbody>
+	</table>
+
+ <script type="text/javascript">
+     $(function () {
+
+         $.ajax({
+             type: "POST",
+             url: "Downloads.aspx/GetDownloads",
+             data: '{}',
+             contentType: "application/json; charset=utf-8",
+             dataType: "json",
+             success: OnSuccess,
+             failure: function (response) {
+                 alert(response.d);
+             },
+             error: function (response) {
+                 alert(response.d);
+             }
+         });
+     });
+
+     function OnSuccess(response) {
+         $("[id*=getDownloadsData]").DataTable(
+            {
+                //this line for sorting DESC
+                "order": [[0, "desc"]],
+                //this line for sorting DESC
+
+                //this Function for Auto Increment
+
+                "rowCallback": function (nRow, aData, iDisplayIndex) {
+                    var oSettings = this.fnSettings();
+                    $("td:first", nRow).html(oSettings._iDisplayStart + iDisplayIndex + 1);
+                    return nRow;
+                },
+                //this Function for Auto Increment
+
+                //this Function for disable sorting icon on download column
+                "columnDefs": [{
+                    "orderable": false, "targets": 2
+                } // Applies only Download Column
+                                ],
+                //this Function for disable sorting icon on download column
+
+                bLengthChange: true,
+                lengthMenu: [[25, 50, 100, -1], [25, 50, 100, "All"]],
+                bFilter: true,
+                bSort: true,
+                bPaginate: true,
+                data: response.d,
+                columns: [{ 'data': "id", "orderable": "false" },
+                          { 'data': 'title' },
+                          { 'data': 'image', "orderable": "false",
+                              "render": function (data, type, row, meta) {
+                                  return '<a href="' + "uploads/downloads/" + data + '" target="_blank" download><center><div id="ContentPlaceHolder1_Div1" class="ButtonEdit1 glyphicon glyphicon-download-alt"></div></center></a>';
+                              }
+                          }
+                          ]
+            });
+     };
+    </script>
+    {% endblock %}
